@@ -2,125 +2,79 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Profil Biodata</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        nav {
-            background-color: #eee;
-            padding: 10px;
-        }
-        nav table {
-            width: 100%;
-        }
-        header, section {
-            padding: 20px;
-            text-align: center;
-        }
-        .flex-table {
-            width: 100%;
-            margin-top: 20px;
-        }
-        .flex-table td {
-            padding: 10px;
-            border: 1px solid #ccc;
-            text-align: center;
-        }
-        .portfolio-table {
-            width: 100%;
-            margin-top: 20px;
-        }
-        .portfolio-table td {
-            padding: 10px;
-            text-align: center;
-        }
-        img.placeholder {
-            background-color: #ccc;
-            height: 600px;
-            width: 400px;
-        }
-        img.placeholder-porto{
-            background-color: #ccc;
-            height: 200px;
-            width: 350px;
-             object-fit: cover;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <div class="container-navbar">
+            <div class="brand">Brand</div>
+            <ul class="ul-navbar">
+                <li class="li-navbar">
+                    <a href="#" class="a-navbar">Header</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="about.html" class="a-navbar">Biodata</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="contact.html" class="a-navbar">Portofolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>    
 
-<!-- Section 1: Menu -->
-<nav>
-    <table>
-        <tr>
-            <td><strong>Brand</strong></td>
-            <td style="text-align: right;">
-                <a href="#">Header</a> |
-                <a href="#">Biodata</a> |
-                <a href="#">Portofolio</a>
-            </td>
-        </tr>
-    </table>
-</nav>
-
-<!-- Section 2: Judul dan Gambar -->
-<section>
-    <table class="flex-table">
-        <tr>
-            <td width="50%">
+    <header class="header-section container">
+        <div class="header-grid">
+            <div class="text-box">
                 <h3>Selamat Datang di Website Saya</h3>
                 <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
-                <a href="#">Pelajari Lebih Lanjut</a>
-            </td>
-            <td width="50%">
-                <img src="WhatsApp Image 2025-02-27 at 14.09.18_9d753686.jpg" alt="Gambar Header" class="placeholder">
-            </td>
-        </tr>
-    </table>
-</section>
+                <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+            </div>
+            <div class="image-box">
+                <img src="WhatsApp Image 2025-02-27 at 14.09.18_9d753686.jpg" alt="Foto Profil">
+            </div>
+        </div>
+    </header>
 
-<!-- Section 3: Biodata -->
-<section>
-    <h2>About Me</h2>
-    <p>A brief introduction about myself</p>
-    <table class="flex-table">
-        <tr>
-            <td>Nabil Anshari</td>
-            <td>S1</td>
-            <td>Mahasiswa</td>
-        </tr>
-        <tr>
-            <td>085xxxxx</td>
-            <td>Gaming</td>
-            <td>Surabaya</td>
-        </tr>
-    </table>
-</section>
+    <section class="about-section container">
+        <h2>About Me</h2>
+        <p>A brief introduction about myself</p>
+        <div class="biodata-grid">
+            <div><span class="label">Full Name:</span> Nabil Anshari</div>
+            <div><span class="label">Education:</span> S1 Informatika</div>
+            <div><span class="label">Pekerjaan:</span> Programmer</div>
+            <div><span class="label">Contact:</span> Nabil@example.com</div>
+            <div><span class="label">Hobi:</span> Membaca, Coding</div>
+            <div><span class="label">Alamat:</span> Surabaya</div>
+        </div>
+        
+    </section>
 
-<!-- Section 4: Portofolio -->
-<section>
-    <h2>Portofolio</h2>
-    <table class="portfolio-table">
-        <tr>
-            <td>
-                <img src="dog.jpg" alt="Proyek 1" class="placeholder-porto"><br> 
-                <strong>Proyek 1</strong><br>
-                Deskripsi proyek 1.
-            </td>
-            <td>
-                <img src="funny-portrait-of-cute-corgi-dog-outdoors-free-photo.jpg" alt="Proyek 2" class="placeholder-porto"><br>
-                <strong>Proyek 2</strong><br>
-                Deskripsi proyek 2.
-            </td>
-            <td>
-                <img src="133879437844346418.jpg" alt="Proyek 3" class="placeholder-porto"><br>
-                <strong>Proyek 3</strong><br>
-                Deskripsi proyek 3.
-            </td>
-        </tr>
-    </table>
-</section>
+    <section class="portfolio-section container">
+        <h2>Portofolio</h2>
+        <div class="portfolio-grid">
+            <div class="card">
+                <img src="133879437844346418.jpg" alt="Proyek 1">
+                <h3>Proyek 1</h3>
+                <p>Deskripsi proyek 1.</p>
+            </div>
+            <div class="card">
+                <img src="dog.jpg" alt="Proyek 2">
+                <h3>Proyek 2</h3>
+                <p>Deskripsi proyek 2.</p>
+            </div>
+            <div class="card">
+                <img src="funny-portrait-of-cute-corgi-dog-outdoors-free-photo.jpg" alt="Proyek 3">
+                <h3>Proyek 3</h3>
+                <p>Deskripsi proyek 3.</p>
+            </div>
+        </div>
+        
+    </section>
 
+    <footer>
+        <p>© 2024 Nabil. All rights reserved.</p>
+    </footer>
 </body>
 </html>
